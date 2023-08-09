@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: rgb(250, 243, 243);
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.show-top {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.show-top img {
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40%, -50%);
+}
+
+.show-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60%, -50%);
+}
+
+.show {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('bg.jpg')no-repeat center center/cover;
+    opacity: .7;
+    z-index: 1;
+}
+
+.show::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 150px 100px 250px black, inset -120px -100px 250px #000000;
+}
+
+.showcase {
+    margin: 0 26%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 9rem;
+    color: white;
+}
+
+.showcase h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0 30px;
+    max-width: 800px;
+    line-height: 74.5px;
+    display: inline-block;
+}
+
+.shocase h3 {
+    color: white;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.showcase p {
+    font-size: 19.2px;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.showcase input {
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+    width: 454px;
+    height: 3rem;
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
+    opacity: 0.7;
+}
+
+.btn {
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.show .btn-lg {
+    position: absolute;
+    right: 0;
+    bottom: -8vh;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: 3rem;
+    width: 14rem;
+}
+
+.card0,
+.card1,
+.card2,
+.card3 {
+    display: flex;
+    border-top: 8px solid rgb(61, 60, 60);
+    padding: 50px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.disc1 h1,
+.disc0 h1,
+.disc2 h1,
+.disc3 h1 {
+    margin-top: 60px;
+    align-items: center;
+    font-size: 3.4rem;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.disc1 h3,
+.disc0 h3,
+.disc2 h3,
+.disc3 h3 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.sec {
+    text-align: center;
+}
+
+.que {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gridd ul {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+}
+
+.gridd ul li {
+    list-style: none;
+    text-align: left;
+    background-color: rgb(44, 42, 42);
+    height: 85px;
+    width: 85%;
+    font-size: 1.6rem;
+    margin: 5px;
+    padding: 20px 30px;
+}
+
+
+.gridd ul li:hover {
+    background-color: rgb(67, 66, 66);
+    cursor: pointer;
+}
+
+.gridd p {
+    margin-top: 45px;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.input {
+    text-align: center;
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 50% 40%;
+    margin: 15px;
+}
+
+.input input {
+    width: 400px;
+    height: 3rem;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgb(62, 61, 61);
+    border-radius: 3px;
+    color: white;
+}
+
+.input a {
+    height: 3rem;
+    margin-left: 20px;
+    padding: 15px 30px;
+}
+
+.input a .btn {
+    margin-right: 20px;
+    border-radius: 5px;
+
+}
+
+.foot {
+    border-top: 8px solid rgb(49, 49, 49);
+    margin-top: 50px;
+    padding: 50px 40px;
+    color: #cccaca;
+}
+
+.fot a {
+    color: #cccaca;
+    font-size: 0.9rem;
+
+}
+
+.fot {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fot ul {
+    padding-right: 200px;
+}
+
+.fot ul li {
+    list-style: none;
+    padding-bottom: 13px;
+}
+
+.fot ul li a {
+    text-decoration: underline;
+}
+
+.para h6 {
+    color: #cccaca;
+    font-size: 0.9rem;
+    margin-left: 50px;
+    margin-top: 40px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
